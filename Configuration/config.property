@@ -1,0 +1,9 @@
+ChromeDriverPath = C:\\Selenium\\driver\\chromedriver.exe
+FirefoxDriverPath = C:\\Selenium\\driver\\geckodriver.exe
+
+url=https://freecrm.com/
+
+email_address=saurabh.kewal.verma@gmail.com
+password=306090@Fc
+
+browser = chrome
