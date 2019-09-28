@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Launching broswer now]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30706" started-at="2019-09-28T10:33:24Z" finished-at="2019-09-28T10:33:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30706" started-at="2019-09-28T10:33:24Z" finished-at="2019-09-28T10:33:55Z">
+      <class name="com.crm.qa.testcases.LandingPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LandingPageTest@2b9627bc]" name="setUp" is-config="true" duration-ms="13098" started-at="2019-09-28T10:33:24Z" finished-at="2019-09-28T10:33:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching broswer now]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickLoginLinkTest()[pri:1, instance:com.crm.qa.testcases.LandingPageTest@2b9627bc]" name="clickLoginLinkTest" duration-ms="3676" started-at="2019-09-28T10:33:38Z" description="Clicking on loginLink" finished-at="2019-09-28T10:33:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLoginLinkTest -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.crm.qa.testcases.LandingPageTest@2b9627bc]" name="loginTest" duration-ms="6349" started-at="2019-09-28T10:33:41Z" description="Performing Log-in activity" finished-at="2019-09-28T10:33:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="clickaddMovieLinkTest()[pri:3, instance:com.crm.qa.testcases.LandingPageTest@2b9627bc]" name="clickaddMovieLinkTest" duration-ms="6742" started-at="2019-09-28T10:33:48Z" description="clicking addMovie button" finished-at="2019-09-28T10:33:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickaddMovieLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LandingPageTest@2b9627bc]" name="tearDown" is-config="true" duration-ms="798" started-at="2019-09-28T10:33:54Z" finished-at="2019-09-28T10:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LandingPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

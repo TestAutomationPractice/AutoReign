@@ -23,7 +23,7 @@ public class TestBase {
 		
 		try {
 		prop=new Properties();
-			FileInputStream ip = new FileInputStream("./Configuration/config.property");
+			FileInputStream ip = new FileInputStream("C:\\Users\\saurabhverma02\\git\\TestProject\\myMavenProject\\Configuration/config.property");
 			
 			prop.load(ip);
 			

@@ -58,7 +58,7 @@ public static String TESTDATA_SHEET_PATH="C:\\Users\\saurabhverma02\\git\\TestPr
 		FileInputStream fis= null;
 		try 
 		{
-			fis = new FileInputStream(TESTDATA_SHEET_PATH);
+			fis = new FileInputStream("./TestData/MoviesautothonTestData.xlsx");
 			System.out.println("Input Stream is now initialised");
 		} 
 		catch (FileNotFoundException e)
@@ -105,13 +105,13 @@ public static String TESTDATA_SHEET_PATH="C:\\Users\\saurabhverma02\\git\\TestPr
 				
 				else if(cell.getCellType()==CellType.NUMERIC)
 				{
-					String phone_no = new BigDecimal(cell.getNumericCellValue()).toPlainString();
+					String rating = new BigDecimal(cell.getNumericCellValue()).toPlainString();
 				//int value =	new Double(cell.getNumericCellValue()).intValue();
 				//int value =	(int)cell.getNumericCellValue();
 				//String phone_no=String.valueOf(value);
 					//String phone_no = String.valueOf(cell.getNumericCellValue());
 				
-					data[i][j]=phone_no;
+					data[i][j]=rating;
 				}
 				
 				else

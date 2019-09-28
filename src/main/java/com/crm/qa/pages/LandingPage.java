@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.Status;
 import com.crm.qa.base.TestBase;
+import com.crm.qa.utility.TestUtil;
 import com.crm.qa.utility.ExtentReports.ExtentTestManager;
 
 public class LandingPage extends TestBase {
@@ -22,6 +23,9 @@ public class LandingPage extends TestBase {
 	/* @FindBy (xpath="//ul[@class='rd-navbar-nav']//child::span[contains(text(),'Log In')]")
 	WebElement login; */
 	
+	@FindBy(xpath="//button[@class='btn btn-secondary']")
+	WebElement hashLink;
+	
 	@FindBy(xpath="//li[@class='nav-item']/a[text()='Login']")
 	WebElement loginLink;
 	
@@ -34,28 +38,44 @@ public class LandingPage extends TestBase {
 	@FindBy(xpath="//li[@class='nav-item']//child::div[@class='card-body']/button[text()='Login']")
 	WebElement loginbutton;
 	
+	@FindBy(xpath="//a[contains(text(),'add movie')]")
+	WebElement addMovieLink;
+	
 	//Actions
 	
 	public void clickLoginLink()
 	{
 		
+		hashLink.click();
+		TestUtil.explicitWait();
 		loginLink.click();
 		      
 		/* return new LoginPage();  */
 		
 	}
 	
-	public HomePage login(String username, String password) throws InterruptedException 
+	public void login(String username, String password) throws InterruptedException 
 	{
 		
-		usernameLink.sendKeys(username);
+		usernameLink.sendKeys(password);
 		Thread.sleep(3000);
-		passwordLink.sendKeys(password);
+		passwordLink.sendKeys(username);
 		Thread.sleep(3000);
 		
 		loginbutton.click();
-		return new HomePage();
+		
+	}
+		
+		public HomePage clickAddMovieLink() throws InterruptedException
+		{
+			WebDriverWait wait = new WebDriverWait(driver,3);
+			wait.until(ExpectedConditions.visibilityOf(addMovieLink)).click();
+			Thread.sleep(3000);
+			//addMovieLink.click();
+			
+			TestUtil.explicitWait();
+			return new HomePage();
+		}
 	
 }
 	
-}
